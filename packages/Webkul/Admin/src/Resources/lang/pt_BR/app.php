@@ -151,7 +151,7 @@ return [
             'index' => [
                 'all' => 'Todos',
                 'bcc' => 'Cópia oculta',
-                'by-user' => 'Por usuário',
+                'by-user' => 'Por :user',
                 'calls' => 'Chamadas',
                 'cc' => 'Cópia',
                 'change-log' => 'Logs de Alterações',
@@ -241,12 +241,12 @@ return [
                 'must-select-a-mass-action' => 'Você deve selecionar uma ação em massa.',
             ],
             'toolbar' => [
-                'length-of' => 'tamanho de',
+                'length-of' => ':length de',
                 'of' => 'de',
                 'per-page' => 'Por Página',
-                'results' => 'Resultados',
+                'results' => ':total Resultados',
                 'delete' => 'Excluir',
-                'selected' => 'Itens Selecionados',
+                'selected' => ':total Itens Selecionados',
                 'mass-actions' => [
                     'submit' => 'Enviar',
                     'select-option' => 'Selecionar Opção',
@@ -274,6 +274,9 @@ return [
                 ],
                 'search' => [
                     'title' => 'Pesquisar',
+                ],
+                'column-settings' => [
+                    'title' => 'Configurações de Colunas',
                 ],
             ],
             'filters' => [
@@ -323,7 +326,7 @@ return [
                 'added-tags' => 'Tags Adicionadas',
                 'save-btn' => 'Salvar Tag',
                 'placeholder' => 'Digite para procurar tags',
-                'add-tag' => 'Adicionar Tag',
+                'add-tag' => 'Adicionar \":term\"...',
                 'aquarelle-red' => 'Vermelho',
                 'crushed-cashew' => 'Castanho',
                 'beeswax' => 'Amarelado',
@@ -536,7 +539,7 @@ return [
                         'quotes' => 'Cotações',
                         'notes' => 'Notas',
                         'emails' => 'E-mails',
-                        'by-user' => 'Por usuário',
+                        'by-user' => 'Por :user',
                         'scheduled-on' => 'Agendado em',
                         'location' => 'Localização',
                         'participants' => 'Participantes',
@@ -1707,7 +1710,7 @@ return [
             'no-result-found' => 'Nenhum registro encontrado.',
             'users' => 'Usuários',
         ],
-        'updated' => 'Atualizado',
+        'updated' => 'Atualizado :attribute',
         'created' => 'Criado',
         'duration-overlapping' => 'Os participantes têm outra reunião neste horário. Deseja continuar?',
         'create-success' => 'Atividade adicionada com sucesso.',
@@ -1894,6 +1897,16 @@ return [
                         'from' => 'De',
                         'select' => 'Selecionar',
                         'to' => 'Para',
+                    ],
+                    'card-settings' => [
+                        'title' => 'Configurações do Cartão',
+                        'contact-person' => 'Pessoa de Contato',
+                        'rotten-indicator' => 'Indicador de Estagnação',
+                        'sales-person' => 'Vendedor',
+                        'estimated-lead-value' => 'Valor Estimado do Negócio',
+                        'source' => 'Origem',
+                        'lead-type' => 'Tipo de Negócio',
+                        'tags' => 'Tags',
                     ],
                 ],
                 'stages' => [
