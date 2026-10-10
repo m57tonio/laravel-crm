@@ -4,6 +4,8 @@ This changelog consists of the bug & security fixes and new features being inclu
 
 ## **v2.2.6 (10th of Sept 2026)**
 
+* [security] Improved in Security.
+
 * [feature] Added MariaDB support.
 
 * [feature] Added customizable lead card information. Datagrid columns and Kanban lead card fields can now be chosen per user through new column and card settings components.
@@ -31,6 +33,8 @@ This changelog consists of the bug & security fixes and new features being inclu
 * [fixed] Added the missing Chinese translations for the users grid's associated group column.
 
 * [fixed] Fixed flaky admin end-to-end tests around organization owner lookup, lead creation and rich-text comment fields.
+
+* [fixed] Fixed creating or updating a lead failing with a server error (HTTP 500) when a product row was submitted without a `product_id`. The request is now rejected with a validation error.
 
 * [security] Fixed user and role listings not being scoped by the acting user's data scope, which allowed users to see records outside their own group. Roles now track their creator via a new `created_by` column.
 
